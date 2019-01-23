@@ -7,6 +7,7 @@ import { SearchComponent } from "./components/search/search.component";
 import { ArtistaComponent } from "./components/artista/artista.component";
 import { NavbarComponent } from "./components/shared/navbar/navbar.component";
 import { ROUTES } from "./app.routes";
+import { HttpClientModule } from '@angular/common/http';
 
 //importar rutas
 
@@ -18,7 +19,9 @@ import { ROUTES } from "./app.routes";
     ArtistaComponent,
     NavbarComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(ROUTES)],
+  imports: [BrowserModule, 
+    HttpClientModule,
+    RouterModule.forRoot(ROUTES)],
   providers: [],
   bootstrap: [AppComponent]
 })
