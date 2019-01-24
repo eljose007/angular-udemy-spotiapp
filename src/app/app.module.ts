@@ -8,6 +8,9 @@ import { ArtistaComponent } from "./components/artista/artista.component";
 import { NavbarComponent } from "./components/shared/navbar/navbar.component";
 import { ROUTES } from "./app.routes";
 import { HttpClientModule } from '@angular/common/http';
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { TarjerasComponent } from './components/tarjeras/tarjeras.component';
+import { LoadingComponent } from './components/share/loading/loading.component';
 
 //importar rutas
 
@@ -17,7 +20,10 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    TarjerasComponent,
+    LoadingComponent
   ],
   imports: [BrowserModule, 
     HttpClientModule,
