@@ -10,4 +10,6 @@
   </div>
 </div>
 
-<app-tarjeras [items]="artistas"></app-tarjeras>
+<app-loading class="m-5" *ngIf="loading"></app-loading>
+
+<app-tarjeras [items]="artistas" *ngIf="!loading"></app-tarjeras>
